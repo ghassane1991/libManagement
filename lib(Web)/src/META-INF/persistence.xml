@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="persistentLibrary" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<class>subscribersManagement.Subscriber</class>
+		<class>booksManagement.Book</class>
+		<class>subscribersManagement.Entitled</class>
+		<class>loansManagement.Loan</class>
+		<class>booksManagement.BookCopy</class>
+		<class>subscribersManagement.AgeCategory</class>
+		<class>loansManagement.History</class>
+		<class>reservationManagement.Reservation</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:54321/commission_management"/>
+			<property name="javax.persistence.jdbc.user" value="bdd1"/>
+			<property name="javax.persistence.jdbc.password" value="bdd1"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+
+		<!--  Provider specific properties -->
+		<!-- Hibernate should create the database automatically -->
+	    <!-- <property name="hibernate.hbm2ddl.auto" value="create-drop"/> --> 
+	    <property name="hibernate.hbm2ddl.auto" value="update"/>
+		<!-- Hibernate will use some defaults depending on the database -->
+		<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+		<!-- Hibernate will display requests to the database -->
+		<!-- <property name="hibernate.show_sql" value="true"/>  -->
+	
+		<!--  EclipseLink specific properties -->
+		
+		<!-- EclipseLink should create the database automatically -->
+		<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+	
+		<!-- EclipseLink should show the sql generated for each request -->
+		<!-- <property name="eclipselink.ddl-generation.output-mode" value="database"/> -->
+
+
+		</properties>
+	</persistence-unit>
+</persistence>
+
+

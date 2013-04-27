@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+.header{
+	height:200px;
+	width:1000px;
+}
+.header img{
+	width:166%;
+	height:85%
+}
+body{
+	background-image:url('img/lib.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.block{
+	margin-top:10px;
+	margin-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1200px;
+}
+.reservation{
+	float:left;
+	display:block;
+	margin-right:60px;
+}
+a{
+	text-decoration:none;
+	font-family:candara,serif,sans-serif;
+	text-transform:uppercase;
+	font-size:26px;
+	color:#006699;
+	padding:25px;
+	border:3px;
+	border-style:groove;
+	border-color:#99CC00;
+	background-color:#CCCC99;
+}
+a:hover{
+	text-decoration:none;
+	font-family:candara,serif,sans-serif;
+	text-transform:uppercase;
+	font-size:26px;
+	color:#339933;
+	padding:25px;
+	border:3px;
+	border-style:groove;
+	border-color:#99CC00;
+	background-color:#FF9900;
+}
+.cancelReservation{
+	display:block;
+	float:left;
+	margin-right:60px;
+}
+.deconnexion{
+	display:block;
+}
+.submit{
+	margin-bottom:300px;
+	margin-left:310px;
+}
+
+table{
+	border: 1px solid white;
+    margin-top:50px;
+    margin-left:90px;
+    margin-bottom:5px;
+}
+label{
+	color:#FFFFFF;
+}
+.footer{
+	margin-bottom:0px;
+	color:#FFFFFF;
+}
